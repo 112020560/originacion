@@ -1,0 +1,20 @@
+/* eslint-disable prettier/prettier */
+export class TrasladeRequest {
+    STR_COD_PAIS: string | null;
+    STR_CEDULA?: string | null;
+    SIN_FACE?: number | null;
+    STR_OCUPACION?: string | null;
+    FEC_NACIMIENTO?: string | null;
+    STR_NACIONALIDAD?: string | null;
+    INT_SUB_ORIGEN?: number | null;
+    BIN_ID_SOLICITUD_REF?: number | null;
+    Fk_Suv_Cat_Marca?: number | null;
+    OCUPACION?: string | null;
+    PROFESION?: string | null;
+    GENERO?: string | null;
+    ESTADO_CIVIL?: string | null;
+    INGRESO_BRUTO?: number | null;
+    OTROS_INGRESOS?: number | null;
+    STR_USUARIO_CREACION?: string | null;
+    STR_EMAIL?: string | null;
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/originacion/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/originacion/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/originacion",
+  "projects": {
+    "originacion": {
+      "type": "application",
+      "root": "apps/originacion",
+      "entryFile": "main",
+      "sourceRoot": "apps/originacion/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/originacion/tsconfig.app.json"
+      }
+    },
+    "solicitud": {
+      "type": "application",
+      "root": "apps/solicitud",
+      "entryFile": "main",
+      "sourceRoot": "apps/solicitud/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/solicitud/tsconfig.app.json"
+      }
+    },
+    "infrastructure": {
+      "type": "library",
+      "root": "libs/infrastructure",
+      "entryFile": "index",
+      "sourceRoot": "libs/infrastructure/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/infrastructure/tsconfig.lib.json"
+      }
+    },
+    "shared": {
+      "type": "library",
+      "root": "libs/shared",
+      "entryFile": "index",
+      "sourceRoot": "libs/shared/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shared/tsconfig.lib.json"
+      }
+    },
+    "file-service": {
+      "type": "application",
+      "root": "apps/file-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/file-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/file-service/tsconfig.app.json"
+      }
+    },
+    "notifications": {
+      "type": "application",
+      "root": "apps/notifications",
+      "entryFile": "main",
+      "sourceRoot": "apps/notifications/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notifications/tsconfig.app.json"
+      }
+    },
+    "digital": {
+      "type": "application",
+      "root": "apps/digital",
+      "entryFile": "main",
+      "sourceRoot": "apps/digital/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/digital/tsconfig.app.json"
+      }
+    },
+    "digital-service": {
+      "type": "application",
+      "root": "apps/digital-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/digital-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/digital-service/tsconfig.app.json"
+      }
+    }
+  }
+}
